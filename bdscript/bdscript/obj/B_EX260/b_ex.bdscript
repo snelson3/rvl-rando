@@ -111,8 +111,8 @@ L142:
  infoezf 
  jnz L197
  pushFromFSp 0
- pushImmf 50
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  jmp L197
 L197:
  pushFromFSp 4
@@ -1134,8 +1134,8 @@ L1399:
  pushImm 1895
  syscall 1, 114 ; trap_obj_search_by_entry (2 in, 0 out)
  pushFromFSp 0
- pushImmf 80
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  pushImm 0
  popToWp W4224
  pushImm 0

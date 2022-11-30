@@ -116,8 +116,8 @@ L177:
  pushFromPSp 16
  syscall 1, 79 ; trap_obj_set_dir (2 in, 0 out)
  pushFromFSp 0
- pushImmf 100
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  pushFromFSp 0
  pushFromPAi L12979 ; ___ai: 'blowup_stun' (L12979)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
@@ -144,8 +144,8 @@ L220:
  pushFromPSp 16
  syscall 1, 79 ; trap_obj_set_dir (2 in, 0 out)
  pushFromFSp 0
- pushImmf 100
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  pushFromFSp 0
  pushFromPAi L13170 ; ___ai: 'self_stun' (L13170)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
@@ -171,8 +171,8 @@ L289:
  eqz 
  jnz L309
  pushFromFSp 0
- pushImmf 100
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  jmp L309
 L309:
  jmp L311
@@ -835,8 +835,8 @@ L479:
  pushImm 0
  gosub 4, L413
  pushFromFSp 0
- pushImmf 100
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  pushFromFSp 0
  syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
  pushImm 0
@@ -3038,8 +3038,8 @@ L5986:
  eqz 
  jnz L6018
  pushFromFSp 0
- pushImmf 80
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  jmp L6072
 L6018:
  pushFromFWp W4416
@@ -3048,8 +3048,8 @@ L6018:
  eqz 
  jnz L6036
  pushFromFSp 0
- pushImmf 70
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  jmp L6072
 L6036:
  pushFromFWp W4416
@@ -3058,8 +3058,8 @@ L6036:
  eqz 
  jnz L6054
  pushFromFSp 0
- pushImmf 60
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  jmp L6072
 L6054:
  pushFromFWp W4416
@@ -3068,8 +3068,8 @@ L6054:
  eqz 
  jnz L6072
  pushFromFSp 0
- pushImmf 50
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  jmp L6072
 L6072:
  pushFromFSp 0

@@ -980,8 +980,8 @@ L2212:
  jmp L2243
 L2243:
  pushFromFSp 0
- pushImmf 60
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  pushImm 0
  popToSpVal 108
  pushImm 0

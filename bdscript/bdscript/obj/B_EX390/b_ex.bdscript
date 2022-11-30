@@ -1734,15 +1734,15 @@ L1833:
  pushImm 242
  popToSp 8
  pushFromFSp 0
- pushImmf 75
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  jmp L3877
 L3865:
  pushImm 213
  popToSp 8
  pushFromFSp 0
- pushImmf 100
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
 L3877:
  pushFromFSp 0
  pushFromFSp 8

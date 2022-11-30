@@ -1939,13 +1939,13 @@ L3487:
  eqz 
  jnz L3507
  pushFromFSp 0
- pushImmf 55
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  jmp L3514
 L3507:
  pushFromFSp 0
- pushImmf 75
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
 L3514:
  halt 
  jmp L3409
@@ -3044,8 +3044,8 @@ L3976:
  pushImmf 0
  popToSpVal 116
  pushFromFSp 0
- pushImmf 75
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  pushFromFSp 0
  pushImm 14
  syscall 1, 70 ; trap_obj_set_flag (2 in, 0 out)

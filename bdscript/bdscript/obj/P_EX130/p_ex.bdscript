@@ -514,8 +514,8 @@ L180:
  pushImm 6
  syscall 1, 211 ; trap_obj_pattern_enable (2 in, 0 out)
  pushFromFSp 0
- pushImmf 40
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  pushFromFSp 0
  pushImm 24
  add 

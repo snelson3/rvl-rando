@@ -842,8 +842,8 @@ L1965:
  pushImm 0
  memcpy 0
  pushFromFSp 0
- pushImmf 50
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  pushImm 0
  popToSpVal 112
  pushImm 0

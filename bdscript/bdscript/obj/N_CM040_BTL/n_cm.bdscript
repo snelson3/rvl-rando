@@ -3915,8 +3915,8 @@ L5273:
  pushImmf 2
  memcpy 0
  pushFromFSp 0
- pushImmf 150
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  pushImm 0
  popToSpVal 136
  pushImm 0
@@ -3943,8 +3943,8 @@ L5273:
  pushImm 1
  popToSpVal 168
  pushFromFSp 0
- pushImmf 125
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  jmp L8074
 L8074:
  pushImm 0

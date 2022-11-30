@@ -436,8 +436,8 @@ L1019:
  pushImm 0
  popToSpVal 116
  pushFromFSp 0
- pushImmf 100
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  pushFromFSp 0
  pushImm 182
  pushImm 0
@@ -453,8 +453,8 @@ L1052:
  pushImm 1
  popToSpVal 116
  pushFromFSp 0
- pushImmf 80
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  pushFromFSp 0
  pushImm 186
  pushImm 0
@@ -470,8 +470,8 @@ L1085:
  pushImm 2
  popToSpVal 116
  pushFromFSp 0
- pushImmf 60
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  pushFromFSp 0
  pushImm 190
  pushImm 0
@@ -481,8 +481,8 @@ L1109:
  pushImm 3
  popToSpVal 116
  pushFromFSp 0
- pushImmf 40
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  pushFromFSp 0
  pushImm 194
  pushImm 0

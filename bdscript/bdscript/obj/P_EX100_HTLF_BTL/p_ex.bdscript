@@ -4728,8 +4728,8 @@ L9002:
  pushImm 2
  popToSpVal 124
  pushFromFSp 0
- pushImmf 95
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  jmp L9172
 L9031:
  dup 
@@ -4747,8 +4747,8 @@ L9040:
  pushImm 3
  popToSpVal 124
  pushFromFSp 0
- pushImmf 90
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  jmp L9172
 L9069:
  dup 
@@ -4766,8 +4766,8 @@ L9078:
  pushImm 3
  popToSpVal 124
  pushFromFSp 0
- pushImmf 85
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  jmp L9172
 L9107:
  dup 
@@ -4785,8 +4785,8 @@ L9116:
  pushImm 4
  popToSpVal 124
  pushFromFSp 0
- pushImmf 80
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  jmp L9172
 L9145:
  pushImmf 150
@@ -4798,8 +4798,8 @@ L9145:
  pushImm 2
  popToSpVal 124
  pushFromFSp 0
- pushImmf 100
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
 L9172:
  drop 
  pushFromFSp 0

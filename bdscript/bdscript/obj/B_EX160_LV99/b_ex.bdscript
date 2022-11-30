@@ -589,8 +589,8 @@ L1097:
  pushImm 1
  memcpy 0
  pushFromFSp 0
- pushImmf 75
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  jmp L1197
 L1155:
  pushFromFSp 0
@@ -1557,8 +1557,8 @@ L1819:
  pushFromFSp 0
  gosub 4, L11092
  pushFromFSp 0
- pushImmf 100
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  pushImm 0
  popToWp W24
  pushImm 0

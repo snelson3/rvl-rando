@@ -91,7 +91,7 @@ def main(cli_args: list=[]):
     os.makedirs(moddir)
 
     modyml = {
-        "name": "Revenge Value Randomizer: Seed {}".format(seed),
+        "title": "Revenge Value Randomizer: Seed {}".format(seed),
         "description": "Settings:\n{}".format(settings_to_write),
         "assets": []
     }
@@ -124,9 +124,14 @@ def main(cli_args: list=[]):
             with open(fn) as f:
                 txt = f.read()
             karma_param = re.compile(r'pushImmf (.*)\n.*; trap_enemy_set_karma_limit')
-            text = karma_param.sub(lambda m: str(values.pop()), txt)
+            text = karma_param.sub(lambda m: "pushImmf {}\n syscall 2, 76 ; trap_enemy_set_karma_limit ".format(str(values.pop())), txt)
             # Will cheat with git to test things later
-            writeAi(fn, text)
+            with open(fn,"w") as f:
+                f.write(text)
+            modyml["assets"].append(writeAi(fn, text))
+    modyml_fn = os.path.join(moddir, "mod.yml")
+    yaml.dump(modyml, open(modyml_fn, "w"))
 
+    print(len(values))
 if __name__ == "__main__":
-    main()
+    main_ui()

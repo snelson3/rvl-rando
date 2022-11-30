@@ -3606,8 +3606,8 @@ L5586:
  pushImm 180
  popToSpVal 204
  pushFromFSp 0
- pushImmf 75
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  jmp L7147
 L7130:
  pushImm 20
@@ -3615,8 +3615,8 @@ L7130:
  pushImm 100
  popToSpVal 204
  pushFromFSp 0
- pushImmf 100
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
 L7147:
  pushFromPWp W20
  gosub 4, L16511

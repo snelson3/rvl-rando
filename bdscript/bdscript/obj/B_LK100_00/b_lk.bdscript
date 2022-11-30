@@ -708,8 +708,8 @@ L192:
  pushImm 0
  memcpy 0
  pushFromFSp 0
- pushImmf 60
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  pushFromFSp 0
  pushImm 12
  syscall 1, 70 ; trap_obj_set_flag (2 in, 0 out)

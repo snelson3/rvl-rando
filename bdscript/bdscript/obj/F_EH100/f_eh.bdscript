@@ -836,8 +836,8 @@ L835:
  pushImm 2
  syscall 1, 70 ; trap_obj_set_flag (2 in, 0 out)
  pushFromFSp 0
- pushImmf 40
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  pushFromFSp 0
  syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
  pushImm 0

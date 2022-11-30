@@ -4091,8 +4091,8 @@ L7616:
  gosub32 4, L7244
  drop 
  pushFromFSp 0
- pushImmf 5
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  ret 
 TR13:
  pushFromPWp W32
@@ -6442,8 +6442,8 @@ L9873:
  pushFromFSp 0
  gosub32 4, L39274
  pushFromFSp 0
- pushImmf 200
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  pushFromFSp 0
  pushImm 14
  syscall 1, 211 ; trap_obj_pattern_enable (2 in, 0 out)
@@ -18944,8 +18944,8 @@ L37299:
  pushFromPAi L40542 ; ___ai: 'revenge_start' (L40542)
  syscall 0, 2 ; trap_puts (1 in, 0 out)
  pushFromFSp 0
- pushImmf 200
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  pushFromFSp 0
  fetchValue 24
  dup 
@@ -19708,8 +19708,8 @@ L38625:
  pushImm 2
  gosub32 4, L7806
  pushFromFSp 0
- pushImmf 200
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  pushFromFSp 0
  fetchValue 24
  dup 
@@ -19753,8 +19753,8 @@ L38699:
  pushImm 2
  gosub32 4, L7806
  pushFromFSp 0
- pushImmf 200
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  pushFromFSp 0
  fetchValue 24
  dup 

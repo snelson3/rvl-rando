@@ -2523,8 +2523,8 @@ L4842:
  gosub 8, L13058
  popToSpVal 116
  pushFromFSp 0
- pushImmf 92
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ pushImmf 0
+ syscall 2, 76 ; trap_enemy_set_karma_limit       (2 in, 0 out)
  jmp L4969
 L4930:
  pushFromFSp 0
