@@ -71,6 +71,11 @@ def main(cli_args: list=[]):
     maximum = int(args.maximum_value)
     seed = args.seed if args.seed else time.time()
 
+    if not os.path.exists(os.path.join(args.openkh_dir, "OpenKh.Command.Bar.exe")):
+        raise Exception("Incorrect folder selected!")
+    if not os.path.exists(os.path.join(args.openkh_dir, "OpenKh.Command.Bdxio.exe")):
+        raise Exception("Old version of Openkh used!")
+
     random.seed(seed)
 
     if rando_type == "random_swap":
@@ -125,9 +130,6 @@ def main(cli_args: list=[]):
                 txt = f.read()
             karma_param = re.compile(r'pushImmf (.*)\n.*; trap_enemy_set_karma_limit')
             text = karma_param.sub(lambda m: "pushImmf {}\n syscall 2, 76 ; trap_enemy_set_karma_limit ".format(str(values.pop())), txt)
-            # Will cheat with git to test things later
-            with open(fn,"w") as f:
-                f.write(text)
             modyml["assets"].append(writeAi(fn, text))
     modyml_fn = os.path.join(moddir, "mod.yml")
     yaml.dump(modyml, open(modyml_fn, "w"))

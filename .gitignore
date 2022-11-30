@@ -1,2 +1,5 @@
 config.json
 last_settings.json
+__pycache__
+build
+dist
